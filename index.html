@@ -24,6 +24,13 @@
                     src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
+            
+            <a-assets>
+                <a-asset-item
+                    id="animated-asset2"
+                    src="assets/asset2.gltf"
+                ></a-asset-item>
+            </a-assets>
 
             <a-marker
                 id="animated-marker"
@@ -34,6 +41,16 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
+            >
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker2.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerB"
             >
                 <a-entity
                     id="bowser-model"
